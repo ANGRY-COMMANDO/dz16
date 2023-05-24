@@ -1,0 +1,57 @@
+.game
+{
+	width:  600px;
+	height: 200px;
+	border-bottom: 15px solid #007929;
+	margin: auto;
+}
+#player
+{
+	width: 50px;
+	height: 50px;	
+	background-image: url(PLAYER.png);
+	background-size: 50px 50px;
+	position:  relative;
+	top:  158px;
+}
+#rock
+{
+	width: 85px;
+	height: 36px;
+	background-image: url(ROCK.png);
+	background-size: 85px 36px;
+	position: relative ;
+	top: 118px;
+	left: 580px;
+	animation: rockMov 1.5s infinite linear;
+}
+@keyframes rockMov{
+	0% {
+		left: 580px;
+	}
+	100% {
+		left: -100px ;
+	}
+}
+.jump 
+{
+	animation: jump 0.8s linear;
+}
+
+@keyframes jump {
+  0% {
+    top: 158px;
+  }
+  30% {
+    top: 100px;
+  }
+  50% {
+    top: 20px;
+  }
+  80% {
+    top: 100px;
+  }
+  100% {
+    top: 158px;
+  }
+}
